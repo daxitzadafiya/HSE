@@ -1,0 +1,162 @@
+.login-page {
+  .login-box {
+    height: auto;
+    margin: 20px auto 30px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+
+    .card-body {
+      padding: 45px 30px 20px;
+    }
+
+    .login-sub-title {
+      margin: 0 0 (30/$df-fs)*$rem;
+    }
+
+    .login-input-label {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+
+  .form-material {
+    .form-group {
+      overflow: hidden;
+      margin-bottom: (35/$df-fs)*$rem;
+    }
+
+    .form-control {
+      background-image: none;
+      border: 1px solid #c2c2c2;
+      border-radius: 5px;
+      min-height: 45px;
+      padding: 0 12px;
+
+      &:focus {
+        border: 1px solid #87a53a;
+      }
+    }
+
+    .btn-info {
+      background: #87a53a;
+      border: 1px solid #87a53a;
+    }
+
+    .btn-lg {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    .forgot-password {
+      margin-top: (15/$df-fs)*$rem;
+
+      a {
+        font-size: (14/$df-fs)*$rem;
+        font-weight: bold;
+      }
+    }
+
+    .checkbox label::before {
+      border-color: #d9d9d9;
+    }
+
+    .checkbox-primary input[type=checkbox]:checked + label::before {
+      background-color: #87a53a;
+      border-color: #87a53a;
+    }
+  }
+
+  .logo-box {
+    background-color: transparent;
+    margin-top: 70px;
+  }
+
+  .sign-up-text {
+    background-color: transparent;
+    a {
+      color: #87a53a;
+      font-weight: 500;
+    }
+  }
+}
+
+.reset-password {
+  .title {
+    font-size: (25/$df-fs)*$rem;
+    text-transform: uppercase;
+    padding: (15/$df-fs)*$rem 0;
+  }
+
+  .sub-title {
+    color: #95A8B2;
+    padding: (15/$df-fs)*$rem 0 (10/$df-fs)*$rem;
+  }
+
+  .btn-reset-password {
+    background-color: $primary;
+    margin-bottom: (50/$df-fs)*$rem;
+    margin-top: (25/$df-fs)*$rem;
+
+    &:focus {
+      border: 1px solid $primary;
+    }
+  }
+
+  .back-to-login {
+    color: #000;
+
+    .icon-reset-password {
+      margin-right: (10/$df-fs)*$rem;
+    }
+  }
+}
+
+.login-background {
+  background-color: white;
+  min-height: 692px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+
+  .login-background-grid {
+    display: grid;
+    -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[ 16 ] [left-gutter] 1fr [end];
+    grid-template-columns: [start] 1fr [left-gutter] repeat(16, 86.6px) [left-gutter] 1fr [end];
+    -ms-grid-rows: [top] 1fr [top-gutter] (64px)[ 8 ] [bottom-gutter] 1fr [bottom];
+    grid-template-rows: [top] 1fr [top-gutter] repeat(8, 64px) [bottom-gutter] 1fr [bottom];
+    justify-content: center;
+    margin: 0 -2%;
+    transform: rotate(-12deg) skew(-12deg);
+  }
+
+  .display-flex {
+    display: flex;
+  }
+
+  .Box-background--green {
+    background-color: #87a53a;
+  }
+
+  .Box-background--cyan200 {
+    background-color: #b7ea35;
+  }
+
+  .Box-background--blue800 {
+    background-color: #4b5434;
+  }
+
+  .Box-background--gray100 {
+    background-color: #e3e8ee;
+  }
+
+  .Box-divider--light-all-2 {
+    box-shadow: inset 0 0 0 (2/$df-fs)*$rem #e3e8ee;
+  }
+}
+
+.padding-top-64 {
+  padding-top: (64/$df-fs)*$rem;
+}

@@ -1,0 +1,65 @@
+{
+  "name": "HSE",
+  "version": "1.0.0",
+  "description": "Admin Dashboard",
+  "author": "Du Bui",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@balkangraph/orgchart.js": "^6.3.1",
+    "@nuxtjs/auth": "^4.8.5",
+    "@nuxtjs/axios": "^5.9.5",
+    "@stripe/stripe-js": "^1.54.2",
+    "axios": "^0.21.1",
+    "bootstrap-vue": "^2.6.1",
+    "chart.js": "^2.9.4",
+    "dropkiq-ui": "^1.0.74",
+    "gojs": "^2.1.46",
+    "js-cookie": "^2.2.1",
+    "jspdf": "^2.4.0",
+    "lodash.assign": "^4.2.0",
+    "lodash.merge": "^4.6.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.11.0",
+    "sass": "^1.26.2",
+    "sass-loader": "^8.0.2",
+    "v-toaster": "^1.0.3",
+    "vee-validate": "^2.2.15",
+    "vue-chartjs": "^3.5.1",
+    "vue-froala-wysiwyg": "^3.2.1-1",
+    "vue-i18n": "^8.15.5",
+    "vue-lodash": "^2.1.2",
+    "vue-underscore": "^0.1.4",
+    "vue2-daterange-picker": "^0.4.6",
+    "vue2-editor": "^2.10.2",
+    "vuedraggable": "^2.24.3",
+    "vuelidate": "^0.7.5",
+    "vuetify": "^2.2.16",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-nuxt": "^0.5.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.16.4"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "5619"
+    }
+  }
+}

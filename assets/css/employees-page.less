@@ -1,0 +1,84 @@
+.employees-page {
+  position: relative;
+
+  .btn-create {
+    position: absolute;
+    right: 35px;
+    top: 22px;
+  }
+
+  .btn-disable {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+
+  .employee-setting-header{
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    .panel-heading{
+      text-align: left;
+      padding: 20px 15px 0 15px;
+    }
+    .panel-footer {
+      padding: 20px 15px;
+      background-color: #f8f8f8;
+      border-top: 1px solid #eaeaea;
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+    .v-sheet--tile{
+      border-radius: 8px;
+    }
+  }
+
+  .employee-tabs {
+    position: relative;
+
+    .card-header-tabs {
+      position: absolute;
+      right: 8px;
+      top: 0;
+    }
+
+    .employee-tab-view {
+      padding: 0;
+
+      .employee-grid-view {
+        margin-top: 18px;
+
+        .table-name{
+          position: absolute;
+          top: 15px;
+          left: 15px;
+        }
+
+        .employee-list-grid {
+          //padding-top: 50px;
+
+          .employee-avatar {
+            border-radius: 100%;
+            max-width: 100%;
+          }
+
+          .employee-item-info {
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .v-select{
+    .theme--light.v-label{
+      color: #87a53a;
+      font-weight: 600;
+    }
+  }
+
+  .hse-table-employee .v-data-table__wrapper {
+    padding-top: 0;
+  }
+}

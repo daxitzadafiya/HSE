@@ -1,0 +1,29 @@
+pipelines:
+  branches:
+    '{staging}':
+    - step:
+        name: Build and test
+        caches:
+          - node
+        image: node:14.18.2
+        script:
+          - node --version
+          - yarn
+          - npm run build
+          - ls
+        artifacts:
+          - dist/**
+    - step:
+        name: Deploy artifacts using SCP to PROD
+        deployment: production
+        image: node:12.16.0
+        script:
+          - ls
+          - pipe: atlassian/scp-deploy:0.3.3
+            variables:
+              USER: $sshUser
+              SERVER: $sshHost
+              REMOTE_PATH: '~/public_html/'
+              LOCAL_PATH: 'dist'
+
+
