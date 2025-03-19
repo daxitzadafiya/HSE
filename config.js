@@ -7,3 +7,8 @@ export const baseURL = 'http://127.0.0.1:8000/api/v1/';
 export const mainDomain = [
   'localhost'
 ];
+
+// Google Maps configuration
+export const googleMapsConfig = {
+  apiKey: process.env.GOOGLE_MAPS_API_KEY || ''
+};

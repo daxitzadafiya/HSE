@@ -1,5 +1,5 @@
 if (!(typeof window.google === 'object' && window.google.maps)) {
-  throw 'Google Maps API is required. Please register the following JavaScript library https://maps.googleapis.com/maps/api/js?key=AIzaSyDoliAneRffQDyA7Ul9cDk3tLe7vaU4yP8.'
+  throw 'Google Maps API is required. Please register the following JavaScript library https://maps.googleapis.com/maps/api/js'
 }
 
 var extend_object = function(obj, new_obj) {
@@ -269,7 +269,7 @@ var GMaps = (function(global) {
 
       if (!getElementById('gmaps_context_menu')) return;
 
-      var context_menu_element = getElementById('gmaps_context_menu');
+      var context_menu_element = getElementById('gmaps_context_menu')
       
       context_menu_element.innerHTML = html;
 
